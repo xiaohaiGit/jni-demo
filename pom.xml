@@ -34,11 +34,39 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+            <!--<plugin>-->
+            <!--    <groupId>org.apache.maven.plugins</groupId>-->
+            <!--    <artifactId>maven-resources-plugin</artifactId>-->
+            <!--    <version>3.2.0</version>-->
+            <!--    <executions>-->
+            <!--        <execution>-->
+            <!--            <id>copy-files</id>-->
+            <!--            &lt;!&ndash;<phase>prepare-package</phase>&ndash;&gt;-->
+            <!--            <phase>compile</phase>-->
+            <!--            <goals>-->
+            <!--                <goal>copy-resources</goal>-->
+            <!--            </goals>-->
+            <!--            <configuration>-->
+            <!--                <outputDirectory>${project.build.directory}/classes/lib</outputDirectory>-->
+            <!--                <resources>-->
+            <!--                    <resource>-->
+            <!--                        <directory>${project.basedir}/lib/</directory>-->
+            <!--                        <filtering>false</filtering>-->
+            <!--                        <includes>-->
+            <!--                            <include>libshawn.dll</include> &lt;!&ndash; 指定要打包的文件 &ndash;&gt;-->
+            <!--                        </includes>-->
+            <!--                    </resource>-->
+            <!--                </resources>-->
+            <!--            </configuration>-->
+            <!--        </execution>-->
+            <!--    </executions>-->
+            <!--</plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.3.0</version>
             </plugin>
+
         </plugins>
     </build>
 
